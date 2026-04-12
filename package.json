@@ -1,0 +1,61 @@
+{
+  "name": "pi-task-monitor",
+  "version": "0.1.0",
+  "description": "Pi extension for background task monitoring with auto-wakeup. Watch mode for long-running processes, poll mode for status checking, self-healing retries, tmux title integration, and guardrails enforcement.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanh-ai/pi-task-monitor.git"
+  },
+  "homepage": "https://github.com/ryanh-ai/pi-task-monitor",
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "check": "biome check . && vitest run"
+  },
+  "files": [
+    "index.ts",
+    "utils.ts",
+    "skills/",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "monitor",
+    "process",
+    "background",
+    "watch",
+    "poll",
+    "heartbeat",
+    "deploy",
+    "ci",
+    "build"
+  ],
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.0",
+    "@vitest/coverage-v8": "^4.1.2",
+    "vitest": "^4.1.0"
+  }
+}
