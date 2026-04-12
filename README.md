@@ -8,13 +8,7 @@ Pi extension for background task monitoring with auto-wakeup. Kick off long-runn
 ## Installation
 
 ```bash
-pi install npm:pi-task-monitor
-```
-
-Or from git:
-
-```bash
-pi install git:github.com/<user>/pi-task-monitor
+pi install git:github.com/ryanh-ai/pi-task-monitor
 ```
 
 ## Features
