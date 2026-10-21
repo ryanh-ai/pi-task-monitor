@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Deprecated and archived in favor of pi-interactive-shell dispatch/monitor modes and pi-subagents async runs.
+
 ## 0.1.0 (2026-04-11)
 
 ### Features

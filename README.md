@@ -1,3 +1,14 @@
+> [!CAUTION]
+> **Archived and no longer maintained.** Use [pi-interactive-shell](https://github.com/nicobailon/pi-interactive-shell) instead:
+>
+> | pi-task-monitor | pi-interactive-shell |
+> |---|---|
+> | `monitor_task` watch mode | `interactive_shell({ command, mode: "dispatch", background: true })` |
+> | `monitor_task` poll mode | `interactive_shell({ command, mode: "monitor", monitor: { strategy: "poll-diff", triggers: [...] } })` |
+> | `list_monitors` / `check_monitor` / `cancel_monitor` | `listBackground`, `sessionId` queries, `kill`, `/attach` |
+>
+> Monitor mode also supports `stream` (log line) and `file-watch` triggers. For background agent work, use [pi-subagents](https://github.com/nicobailon/pi-subagents) async runs. Retries and heartbeats have no direct replacement; wrap the command in a shell retry loop if needed.
+
 > [!WARNING]
 > **Forkware** — This project is shared as-is for learning and forking. It works for me; it might work for you. No guarantees, no support promises, no roadmap commitments. Fork it, hack it, make it yours.
 
